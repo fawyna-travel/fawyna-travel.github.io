@@ -29,6 +29,9 @@
     <!-- [[! Ghost outputs important style and meta data with this tag ]] -->
     {% include head.html %}
 
+    <!-- Add Https script for blog.builtforfifty.com  -->
+    {% include https.html %}
+
 </head>
 <body class="{% if paginator.page > 1 %}paged archive-template{% elsif page.class %}{{ page.class }}{% else %}home-template{% endif %} nav-closed">
 
@@ -52,8 +55,5 @@
 
     <!-- Add Google Analytics  -->
     {% include analytics.html %}
-
-    <!-- Add Https script for blog.builtforfifty.com  -->
-    {% include https.html %}
 </body>
 </html>
